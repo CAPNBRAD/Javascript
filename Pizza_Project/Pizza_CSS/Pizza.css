@@ -1,0 +1,111 @@
+body {
+    background-color: hsl(124, 100%, 27%);
+    
+}
+
+h3 {
+    font-family:Turtles;
+    color: brown;
+    text-align: center;
+    background-color:black;
+    
+}
+
+h1 { 
+    font-family: Turtles;
+    color: brown;
+    border: solid brown 2px;
+    border-radius: 8px;
+    text-align:center;
+    background-color:black;
+    text-transform: uppercase; /*capitalize h1*/
+}
+
+h1:hover {
+    filter: grayscale(5%); /*makes heading grey when hovered*/
+    transform: scale(1.1); /*increases size on hover*/
+    transition: transform 1s; /*transformation speed*/
+}
+
+h3:hover {
+    filter: grayscale(5%); /*makes heading grey when hovered*/
+    transform: scale(1.1); /*increases size on hover*/
+    transition: transform 1s; /*transformation speed*/
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+    color:bisque;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin:20px auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: solid brown 2px;
+    border-radius: 8px;
+    background-color:#20b016
+}
+
+.middle {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: solid brown 2px;
+    border-radius: 8px;
+    background-color:#20b016
+}
+
+.right{
+    width: 200 px;
+    height: 200px;
+    float: right;
+    border: solid brown 2px;
+    border-radius: 8px;
+    background-color:#20b016
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width:100px;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+}
+
+footer {
+    text-align: center;
+    
+}
