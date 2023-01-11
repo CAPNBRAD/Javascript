@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Challenge</title>
+    <script src="JavaScript/JavaScript_2.js" defer></script> <!--points to external js-->
+    <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css"><!--Points to external CSS-->
+</head>
+<body>
+    <h1>JavaScript Contact Form</h1>
+
+    <p>This is to demonstrate the basic Contact form with a form validation,<br> using javascript and styled using CSS</p>
+<!--form section-->
+<form name="myForm" onsubmit="return validateForm()" action="https://formspree.io/f/xqkjrrod" method="POST" target="blank">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Your"><br>
+    
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" value="Name">
+
+    <input type="submit" value="Submit">
+</form>
+<footer>&copy;&nbsp;2022-Brad</footer>
+
+    
+</body>
+</html>

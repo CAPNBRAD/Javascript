@@ -1,0 +1,67 @@
+body {   /*sets whole body bg coor */
+    margin:0%;
+    background-color:coral;
+}
+
+h1 { /* h1 element style */
+    text-align:center;
+    text-transform:uppercase;
+    font-family:"Turtles", Optima;
+    }
+
+p, footer {  /* P element style */
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+
+}
+
+/* CONTACT FORM STYLING */
+/* input[type=text] targets all text input sections of form */
+input[type=text] {
+    text-align:center;
+    width: 50%; /*makes input box full width of container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* creates a bordered box around input feilds */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* allows for vertical resize of boxes */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px black inset;
+}
+
+
+/* submit button */
+input[type=submit] {
+    background-color: black; /* sets bg color of submit button */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none; /* removes border from submit button */
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer; /* changes cursor to pointer */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* hover effect for submit button */
+input[type=submit]:hover {
+    background-color: white;
+    color: black; /* black text on hover */
+    transform: scale(1.5s);
+    transition: transform 1.5s;
+}
+
+form {
+    text-align:center;
+}
+
+
