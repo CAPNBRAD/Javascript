@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+		<script type="text/javascript">
+		
+		
+			
+		// STEP 1: Setup the XML HTTP request object
+		var ajax = new XMLHttpRequest();
+		
+		// STEP 2; Prepare the open ajax request
+		ajax.open('GET', 'content.html');
+		
+		// STEP 3: Define the ajax response callback method
+		ajax.onreadystatechange = function() {
+			if (ajax.readyState == 4) {
+			document.getElementById('content').innerHTML = ajax.responseText;
+			}
+		}
+		// STEP 4: Send the ajax request for data
+		function getContent() {
+			ajax.send();
+			document.getElementById('btn_content').style.display = 'none';
+		}
+		
+		
+</script>
+
+	<div class="main">
+			<h2>Brads Ready State:</h2>
+			<div class='content' id="ready"> <!--this adds a second buton-->
+				<input type="button" class="button" value="Get Content" id="bt_content" onclick="getContent1();"/>
+			</div>
+		<script type="text/javascript"> // this executes the javascript 
+		
+		
+		
+		
+			
+		// STEP 1: Setup the XML HTTP request object
+		var brad = new XMLHttpRequest();
+		
+		// STEP 2; Prepare the open ajax request
+		brad.open('GET', 'ready.html');   //points to target html page
+		
+		// STEP 3: Define the ajax response callback method
+		brad.onreadystatechange = function() {
+			if (brad.readyState == 4) {
+			document.getElementById('ready').innerHTML = brad.responseText;
+			}
+		}
+		// STEP 4: Send the ajax request for data
+		function getContent1() {   //displays the new content
+			brad.send();
+			document.getElementById('bt_content').style.display = 'none';
+		}
+		
+		
+</script>
+
+
+		
+    </body>
+</html>
