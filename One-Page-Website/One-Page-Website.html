@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Brads One-page site!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		<div id="home">
+		</div>
+	<ul> <!--targets for nav feature-->
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#images"><li>Images</li></a>
+					<a href="#contact"><li>Contact</li></a>
+					<a href="#video"><li>Videos</li></a>
+				</ul>
+	
+				<div id="video"></div>
+	<h1>This is my One-page site about Flowers and Flower accesories!</h1>
+	<p>This is an informational page about flowers</p>
+	<p>It was created to spread Flower awareness!</p>
+	
+	<br>
+	
+	
+	
+	
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/jklaLuj6rY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	
+	<section>
+		<div id="contact">
+			<h3><em>Please enter your contact info here</em></h3>
+			<form action="https://formspree.io/f/xqkjrrod" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								
+		</form>
+		</div>
+	
+	<h1>Brads Light Box</h1>
+	<!-- Images used to open the lightbox -->
+<div id="images"></div>
+<div class="row">
+<div class="column">
+  <img src="image/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="plant1">
+</div>
+<div class="column">
+  <img src="image/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="plant2">
+</div>
+<div class="column">
+  <img src="image/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="plant3">
+</div>
+<div class="column">
+  <img src="image/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="plant4">
+</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+  <div class="mySlides">
+	<div class="numbertext">1 / 4</div>
+	<img src="image/plant1.png" style="width:100%" alt="plantslide1">
+  </div>
+
+  <div class="mySlides">
+	<div class="numbertext">2 / 4</div>
+	<img src="image/plant2.png" style="width:100%" alt="plantslide2">
+  </div>
+
+  <div class="mySlides">
+	<div class="numbertext">3 / 4</div>
+	<img src="image/plant3.png" style="width:100%" alt="plantslide3">
+  </div>
+
+  <div class="mySlides">
+	<div class="numbertext">4 / 4</div>
+	<img src="image/plant4.png" style="width:100%" alt="plantslide4">
+  </div>
+
+  <!-- Next/previous controls -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Caption text -->
+  <div class="caption-container">
+	<p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail image controls -->
+  <div class="column">
+	<img class="demo" src="image/plantthumb1.png" onclick="currentSlide(1)" alt="pink">
+  </div>
+
+  <div class="column">
+	<img class="demo" src="image/plantthumb2.png" onclick="currentSlide(2)" alt="Yellow">
+  </div>
+
+  <div class="column">
+	<img class="demo" src="image/plantthumb3.png" onclick="currentSlide(3)" alt="jade">
+  </div>
+
+  <div class="column">
+	<img class="demo" src="image/plantthumb4.png" onclick="currentSlide(4)" alt="white">
+  </div>
+</div>
+
+
+	<br>
+	
+	
+		
+	
+	<br>
+	<br>
+	
+	
+	<br>
+	<!--spot for contact info-->
+	
+		</section><br><br>
+<footer>This page is subject to explosion at any point &copy; &nbsp; 2022</footer>
+</body>
+</html>
