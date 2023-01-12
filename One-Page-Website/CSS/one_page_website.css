@@ -1,7 +1,7 @@
 body { /*adds font style and size to all text*/
     font-family: 'Algerian', sans-serif;
     font-size:large;
-    
+    background-color: darkslategray;
 }
 
 ul {
