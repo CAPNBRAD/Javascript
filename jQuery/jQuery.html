@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this below points to the jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>JQuery</title>
+</head>
+<script>$(document).ready(function() {
+    $("html").append( //this tells jquery to change or append the html element 
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragreph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                    <h2>This is my jQuery event sample</h2>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#2").css({"color":"red"}); //changes element P id #2 to the color red
+    $("#3").click(function() {  //second function hides H1 element on click
+        $("h1").hide();
+    }); //ends first function
+
+    $("h2").dblclick(function() { //on double-click all the P elements are hidden slowly
+        $("p").hide( "slow" );
+    });
+}); //ends the function section
+            
+            </script>
+<body>
+    
+</body>
+</html>
